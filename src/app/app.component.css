@@ -1,0 +1,23 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-controls {
+  flex: 0 0 30%;
+}
+
+.controls{
+  padding-top: 1rem;
+}
+
+.textButton {
+  padding-top: 1rem;
+}
+
+app-habitacion {
+  flex: 1;
+}

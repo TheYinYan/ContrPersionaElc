@@ -1,23 +1,96 @@
+/* Contenedor principal de la aplicación */
 :host {
   display: flex;
   flex-direction: column;
   height: 100vh;
   align-items: center;
   justify-content: center;
+  background-color: #f4f6f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333333;
+  margin: 0;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
+/* Sección superior que envuelve el título y los botones de control */
 .div-controls {
-  flex: 0 0 30%;
+  flex: 0 0 auto; /* Cambiado a auto para que se adapte mejor al contenido */
+  width: 100%;
+  max-width: 500px;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
-.controls{
+/* Estilo para el título principal (h1) */
+.div-controls h1 {
+  font-size: 1.8rem;
+  color: #1a202c;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Contenedor de cada bloque de botón + texto informativo */
+.controls {
   padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  border-top: 1px solid #e2e8f0;
 }
 
+.controls:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+/* Texto que muestra el estado actual (Conectada/Desconectada) */
 .textButton {
-  padding-top: 1rem;
+  padding-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #4a5568;
 }
 
+/* Estilo base para los botones de acción */
+button {
+  background-color: #3182ce;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  width: 100%;
+  max-width: 320px;
+  box-shadow: 0 2px 4px rgba(49, 130, 206, 0.2);
+}
+
+button:hover {
+  background-color: #2b6cb0;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Componente hijo (la habitación) */
 app-habitacion {
   flex: 1;
+  width: 100%;
+  max-width: 500px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
 }

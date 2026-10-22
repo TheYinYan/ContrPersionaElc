@@ -1,0 +1,43 @@
+/* Título interno de la Persiana */
+h1 {
+  font-size: 1.15rem;
+  color: #4a5568;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+/* Contenedor de información de la persiana */
+.info {
+  padding-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #718096;
+  margin-bottom: 1rem;
+}
+
+/* Contenedor o clase del botón de acción */
+.button {
+  padding-top: 0.5rem;
+}
+
+/* Estilo del botón específico de la persiana (Subir/Bajar) */
+.button button, button {
+  background-color: #4a5568; /* Tono gris oscuro corporativo */
+  color: #ffffff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.button button:hover, button:hover {
+  background-color: #2d3748;
+}
+
+.button button:active, button:active {
+  transform: scale(0.98);
+}

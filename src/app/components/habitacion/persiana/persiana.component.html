@@ -1,1 +1,9 @@
 <h1>PERSIANA</h1>
+<div class="info">
+  <div><strong>Persiana id:</strong> #1</div>
+  <div><strong>Estado:</strong> {{ this.estado ? 'CERRADA' : 'ABIERTA' }}</div>
+</div>
+
+<div class="button">
+  <button (click)="onConetarDesconectarPer($event)">Bajar</button>
+</div>

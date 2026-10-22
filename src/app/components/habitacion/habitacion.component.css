@@ -1,3 +1,34 @@
-.info{
+/* Título del componente Habitación */
+h1 {
+  font-size: 1.4rem;
+  color: #2d3748;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #edf2f7;
+  padding-bottom: 0.5rem;
+}
+
+/* Contenedor de información de estado (ID y Corriente) */
+.info {
   padding-top: 1rem;
+  font-size: 0.95rem;
+  color: #4a5568;
+  line-height: 1.6;
+  background-color: #f7fafc;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+/* Destacado fuerte para las etiquetas de los estados */
+.info strong {
+  color: #2d3748;
+}
+
+/* Espaciador y contenedor para incrustar el componente hijo (app-persiana) */
+app-persiana {
+  display: block;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px dashed #e2e8f0;
 }

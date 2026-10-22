@@ -5,19 +5,23 @@ import { Component, input } from '@angular/core';
   imports: [],
   templateUrl: './persiana.component.html',
   styleUrl: './persiana.component.css',
+  host: {
+    '[class.warning]': 'alarm',
+  },
 })
 export class PersianaComponent {
   estado = false;
-  corriente = input();
+  corriente = input<boolean>();
+  alarm = false;
 
   onConetarDesconectarPer(event: Event) {
-    let conDes = event.target as HTMLButtonElement;
-    this.estado = !this.estado;
-    conDes.innerHTML = this.estado ? 'Bajar' : 'Subir';
-    
     if (!this.corriente) {
-      this.estado = false;
-      conDes.innerHTML = 'Subir';
+      this.alarm = true;
+    }else{
+      this.alarm = false;
+      let conDes = event.target as HTMLButtonElement;
+      this.estado = !this.estado;
+      conDes.innerHTML = this.estado ? 'Bajar' : 'Subir';
     }
   }
 }

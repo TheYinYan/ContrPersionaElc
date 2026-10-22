@@ -41,3 +41,9 @@ h1 {
 .button button:active, button:active {
   transform: scale(0.98);
 }
+
+.button button[disabled]{
+  background-color: #caccac;
+  color: #666666;
+  cursor: not-allowed;
+}

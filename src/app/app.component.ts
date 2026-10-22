@@ -30,6 +30,6 @@ export class AppComponent {
     conDes.innerHTML =
       (this.corrienteHabitacion ? 'Desconectar' : 'Conectar') +
       ' corriente Hab #1';
-    if (this.corrienteVivienda) this.corrienteHabitacion = false;
+    if (!this.corrienteVivienda) this.corrienteHabitacion = false;
   }
 }

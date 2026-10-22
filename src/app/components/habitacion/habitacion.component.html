@@ -4,4 +4,4 @@
   <div><strong>Corriente:</strong> {{ corriente() ? 'ON' : 'OFF' }}</div>
 </div>
 
-<app-persiana [corriente]="corriente"></app-persiana>
+<app-persiana [corriente]="this.corriente()"></app-persiana>

@@ -5,5 +5,5 @@
 </div>
 
 <div class="button">
-  <button (click)="onConetarDesconectarPer($event)">Bajar</button>
+  <button (click)="onConetarDesconectarPer($event)" [disabled]="!this.corriente()">Bajar</button>
 </div>

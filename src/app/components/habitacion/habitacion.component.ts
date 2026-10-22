@@ -8,12 +8,6 @@ import { PersianaComponent } from './persiana/persiana.component';
   styleUrl: './habitacion.component.css',
 })
 export class HabitacionComponent {
-  corriente = input();
-  // onConetarDesconectarHab(event: Event) {
-  //   let conDes = event.target as HTMLButtonElement;
-  //   this.corriente = !this.corriente;
-  //   conDes.innerHTML =
-  //     (this.corriente ? 'Desconectar' : 'Conectar') + ' corriente Hab #1';
-  //   if (!this.corriente) this.corriente = false;
-  // }
+  corriente = input<boolean>();
+
 }
